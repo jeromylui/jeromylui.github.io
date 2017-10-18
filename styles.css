@@ -1,8 +1,9 @@
 body {
 	background-color: Azure;
 }
+img {
+}
 h1 {
-	background-color: DodgerBlue;
 	font-size: 300%;
 	text-align: center;
 }

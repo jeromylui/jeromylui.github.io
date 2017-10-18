@@ -1,0 +1,12 @@
+body {
+	background-color: Azure;
+}
+h1 {
+	background-color: DodgerBlue;
+	font-size: 300%;
+	text-align: center;
+}
+p {
+	background-color: Tomato;
+	text-align: center;
+}

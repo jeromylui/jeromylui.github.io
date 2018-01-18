@@ -7,9 +7,36 @@
 <link rel="stylesheet" href="devicon-colors.css">
 <link rel="shortcut icon" type="image/x-icon" href="pic.ico?">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
 </head>
 
@@ -114,6 +141,7 @@ a {
     </a>
   </div>
 
+
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
@@ -132,6 +160,7 @@ a {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
+
   <h3 class="w3-center">ABOUT ME</h3>
   <div class="w3-row">
     <div>
@@ -140,43 +169,61 @@ a {
         <div class="face">
 
       </div>
-        <!-- <div src="documents/pic.jpg" class="w3-square w3-image pic" alt="Photo of Me" width="240" height="130" align="left" style="padding-right:25px;"></p> -->
       <p>Welcome to my website! My name is Jeromy Lui. I'm currently a junior at UC Berkeley, majoring in computer science and applied mathematics. I'm most interested in doing backend development and am always looking for opportunities to apply my skills. My reason for doing backend is simple - when I see a lamborghini aventador, though the asthetics are brilliant, I admire the engine and the other innerworkings of the car much more.</p><p> Out of the classes I've taken at college so far, I enjoy networking(cs168) and real analysis(math104) the most, for various reasons. Ever since I was a child, I always wondered how the internet worked and how devices communicated one another. I was simply awed by the intricacies of internet architecture. Luckily for me, my networking course taught me all of these things, and much more. From overarching ideas such as the different layers of the internet and the end-to-end principle to the specifics such as poisoned reverse for learning switches and the exact structure of a packet in IPv4 and TCP, I've been enlightened and intellectually satifisfied throughly. As for the real analysis course, I had immense satisfaction from solving every challenging problem, whether it was about cauchy sequences or metric spaces. I also learned to adopt a thorough and attentive mindset while working on these problems. Whenever writing proofs, I always had to confirm that every single part logically follows. I had to give attention-to-detail for every single proof I wrote for this class. This gives me an even greater edge against detailed programming projects, where every single little detail matters and one mistake can cause headache-inducing bugs. </p>
     </div>
     <div>
       <p style="float:right;">
         <div class="piano">
         </div>
-
-      <!-- <p style="float: right;"><img src="http://www.proaudioland.com/wp/wp-content/uploads/2016/09/piano-header.jpg" class="w3-square w3-image" alt="Piano?" width="300" height="130" align="right" style="padding-left:25px;"> -->
       <p>One of my main hobbies is to play the piano. Though I used to take lessons in elementary school, I quit when I became a middleschooler because I took it for granted. This is a decision I still sometimes regret. However, I have recently begun to rebuild my skills and play again because many piano pieces resonate with me on a deeper level and I appreciate them. Whenever I play the piano, I let my interpretation take its own course. For me, playing piano is something I do for my own relaxation and enjoyment, not to perform or show to others. That way, I make the music my own, and it will sound the best to me. I am currently learning to play Ballade No.1, Op.23 by Chopin, which I consider a masterpiece. If you aren't familiar with this piece, I highly recommend listening to it - it's amazing. </p>
     </div>
   </div>
+
   <p class="w3-large w3-center w3-padding-16">Technical Skills</p>
-  <p class="w3-wide"><i class="devicon-java-plain colored"></i>Java</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
-  </div>
+  <section>
+    <div class="module">
+      <p class="w3-wide"><i class="devicon-java-plain colored"></i>Java</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center model" style="width:100%">100%</div>
+      </div>
+    </div>
+  </section>
   <p></p>
-  <p class="w3-wide"><i class="devicon-python-plain colored"></i>Python</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
-  </div>
+   <section>
+    <div class="module">
+      <p class="w3-wide"><i class="devicon-python-plain colored"></i>Python</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+      </div>
+    </div>
+  </section>
   <p></p>
-  <p class="w3-wide"><i class="devicon-postgresql-plain colored"></i>SQL</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-  </div>
+  <section>
+    <div class="module">
+      <p class="w3-wide"><i class="devicon-postgresql-plain colored"></i>SQL</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+    </div>
+  </section>
   <p></p>
-  <p class="w3-wide"><i class="devicon-git-plain colored"></i>Git</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-  </div>
+  <section>
+    <div class="module">
+      <p class="w3-wide"><i class="devicon-git-plain colored"></i>Git</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+    </div>
+  </section>
   <p></p>
-  <p class="w3-wide"><i class="devicon-c-plain colored"></i>C</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
+  <section>
+    <div class="module">
+      <p class="w3-wide"><i class="devicon-c-plain colored"></i>C</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+    </div>
+  </section>
   </div>
 </div>
 
@@ -213,16 +260,28 @@ a {
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://i.ytimg.com/vi/spwLIoyF4p8/maxresdefault.jpg" alt="Los Angeles">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+      <img src="https://i.ytimg.com/vi/spwLIoyF4p8/maxresdefault.jpg" alt="Morning">
     </div>
     <div class="carousel-item">
-      <img src="documents/winter.jpg" alt="Chicago">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+      <img src="documents/winter.jpg" alt="Snow">
     </div>
     <div class="carousel-item">
-      <img src="https://images8.alphacoders.com/863/thumb-1920-863587.jpg" alt="New York">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+      <img src="https://images8.alphacoders.com/863/thumb-1920-863587.jpg" alt="Purple Sky">
     </div>
     <div class="carousel-item">
-      <img src="http://www.goodwp.com/images/201109/goodwp.com_20066.jpg" alt="New York">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+      </div>
+      <img src="http://www.goodwp.com/images/201109/goodwp.com_20066.jpg" alt="Water">
     </div>
   </div>
 
@@ -233,35 +292,31 @@ a {
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
-
 </div>
 
-
-<!-- <div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div> -->
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT INFORMATION</h3>
-  <p class="w3-center">luijeromy@berkeley.edu</p>
+  <section>
+    <div class="module">
+      <h3 class="w3-center">CONTACT INFORMATION</h3>
+      <p class="w3-center">luijeromy@berkeley.edu</p>
   
   <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-32" id="portfolio">
-  <h3 class="w3-center">MY RESUME</h3>
-  <h5><br></h5>
-    <div class="w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space:nowrap;">
-      <a href="documents/Resume.pdf">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DOWNLOAD <span class="w3-hide-small">PDF</span></span>
-      </a>
-      </div>
-    </div>
-</div>
 
- 
+    <div class="w3-content w3-container w3-padding-32" id="portfolio">
+      <h3 class="w3-center">MY RESUME</h3>
+      <h5><br></h5>
+        <div class="w3-display-container w3-opacity-min" id="home">
+          <div class="w3-display-middle" style="white-space:nowrap;">
+          <a href="documents/Resume.pdf">
+          <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DOWNLOAD <span class="w3-hide-small">PDF</span></span>
+          </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
 </div>
 
 <!-- Footer -->
@@ -276,21 +331,6 @@ a {
  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
 
 // Modal Image Gallery
 function onClick(element) {
@@ -320,10 +360,9 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</script>
 
 </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="slide.js"></script>

@@ -1,368 +1,704 @@
-<head>
-  <title>Jeromy's Website</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-<link rel="stylesheet" href="devicon-colors.css">
-<link rel="shortcut icon" type="image/x-icon" href="pic.ico?">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Jeromy Lui's Website</title>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
 
-      // Store hash
-      var hash = this.hash;
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/pic.ico"/>
+  </head>
+  <body>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-
-</head>
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://images2.alphacoders.com/779/779139.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Resume) */
-.bgimg-2 {
-    background-image: url('https://images2.alphacoders.com/779/779139.jpg');
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("https://i.imgur.com/xbUiOXB.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-a {
-  text-decoration:none;
-}
-
-.w3-bar-item {
-  color: black;
-}
-
-.face {
-  background: #fd9;
-  width: 180px;
-  height: 180px;
-  margin: 10px 15px 10px 10px;
-  box-shadow: 0px 3px 15px 7px rgba(0,0,0,0.2);
-  background-image: url("documents/face.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  float: left;
-}
-
-.piano {
-  background: #fd9;
-  width: 300px;
-  height: 200px;
-  margin: 10px 10px 10px 10px;
-  box-shadow: 0px 3px 15px 7px rgba(0,0,0,0.2);
-  background-image: url("http://www.proaudioland.com/wp/wp-content/uploads/2016/09/piano-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  float: right;
-}
-
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-</style>
-<!-- END STYLE--> 
-
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    
-    
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JEROMY <span class="w3-hide-small">LUI</span></span>
-  </div>
-</div> 
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-
-  <h3 class="w3-center">ABOUT ME</h3>
-  <div class="w3-row">
-    <div>
-      
-      <p style="float: left;">
-        <div class="face">
-
-      </div>
-      <p>Welcome to my website! My name is Jeromy Lui. I'm currently a junior at UC Berkeley, majoring in computer science and applied mathematics. I'm most interested in doing backend development and am always looking for opportunities to apply my skills. My reason for doing backend is simple - when I see a lamborghini aventador, though the asthetics are brilliant, I admire the engine and the other innerworkings of the car much more.</p><p> Out of the classes I've taken at college so far, I enjoy networking(cs168) and real analysis(math104) the most, for various reasons. Ever since I was a child, I always wondered how the internet worked and how devices communicated one another. I was simply awed by the intricacies of internet architecture. Luckily for me, my networking course taught me all of these things, and much more. From overarching ideas such as the different layers of the internet and the end-to-end principle to the specifics such as poisoned reverse for learning switches and the exact structure of a packet in IPv4 and TCP, I've been enlightened and intellectually satifisfied throughly. As for the real analysis course, I had immense satisfaction from solving every challenging problem, whether it was about cauchy sequences or metric spaces. I also learned to adopt a thorough and attentive mindset while working on these problems. Whenever writing proofs, I always had to confirm that every single part logically follows. I had to give attention-to-detail for every single proof I wrote for this class. This gives me an even greater edge against detailed programming projects, where every single little detail matters and one mistake can cause headache-inducing bugs. </p>
-    </div>
-    <div>
-      <p style="float:right;">
-        <div class="piano">
-        </div>
-      <p>One of my main hobbies is to play the piano. Though I used to take lessons in elementary school, I quit when I became a middleschooler because I took it for granted. This is a decision I still sometimes regret. However, I have recently begun to rebuild my skills and play again because many piano pieces resonate with me on a deeper level and I appreciate them. Whenever I play the piano, I let my interpretation take its own course. For me, playing piano is something I do for my own relaxation and enjoyment, not to perform or show to others. That way, I make the music my own, and it will sound the best to me. I am currently learning to play Ballade No.1, Op.23 by Chopin, which I consider a masterpiece. If you aren't familiar with this piece, I highly recommend listening to it - it's amazing. </p>
-    </div>
-  </div>
-
-  <p class="w3-large w3-center w3-padding-16">Technical Skills</p>
-  <section>
-    <div class="module">
-      <p class="w3-wide"><i class="devicon-java-plain colored"></i>Java</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center model" style="width:100%">100%</div>
-      </div>
-    </div>
-  </section>
-  <p></p>
-   <section>
-    <div class="module">
-      <p class="w3-wide"><i class="devicon-python-plain colored"></i>Python</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
-      </div>
-    </div>
-  </section>
-  <p></p>
-  <section>
-    <div class="module">
-      <p class="w3-wide"><i class="devicon-postgresql-plain colored"></i>SQL</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-      </div>
-    </div>
-  </section>
-  <p></p>
-  <section>
-    <div class="module">
-      <p class="w3-wide"><i class="devicon-git-plain colored"></i>Git</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-      </div>
-    </div>
-  </section>
-  <p></p>
-  <section>
-    <div class="module">
-      <p class="w3-wide"><i class="devicon-c-plain colored"></i>C</p>
-      <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-    </div>
-  </section>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">Enjoys</span><br>
-    Progamming
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">20+</span><br>
-    Major Projects
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">Countless</span><br>
-    Lines of Code
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">9000+</span><br>
-    Willingness
-  </div>
-</div>
-
-
-<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-      <img src="https://i.ytimg.com/vi/spwLIoyF4p8/maxresdefault.jpg" alt="Morning">
-    </div>
-    <div class="carousel-item">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-      <img src="documents/winter.jpg" alt="Snow">
-    </div>
-    <div class="carousel-item">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-      <img src="https://images8.alphacoders.com/863/thumb-1920-863587.jpg" alt="Purple Sky">
-    </div>
-    <div class="carousel-item">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-      <img src="http://www.goodwp.com/images/201109/goodwp.com_20066.jpg" alt="Water">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
-
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <section>
-    <div class="module">
-      <h3 class="w3-center">CONTACT INFORMATION</h3>
-      <p class="w3-center">luijeromy@berkeley.edu</p>
-  
-  <!-- Container (Portfolio Section) -->
-
-    <div class="w3-content w3-container w3-padding-32" id="portfolio">
-      <h3 class="w3-center">MY RESUME</h3>
-      <h5><br></h5>
-        <div class="w3-display-container w3-opacity-min" id="home">
-          <div class="w3-display-middle" style="white-space:nowrap;">
-          <a href="documents/Resume.pdf"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DOWNLOAD <span class="w3-hide-small">PDF</span></span>
-          </a>
+    <!-- Header Section Start -->
+    <header id="hero-area" data-stellar-background-ratio="0.5">    
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="lnr lnr-menu"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#hero-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#myprofile">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#coursestaken">Relevant Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#hero-area">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#myprofile">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#coursestaken">Courses Taken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->   
+      <div class="container">      
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Welcome to Jeromy Lui's Website.</h1>
+              <p class="lead wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Student and Aspiring Software Developer</p>
+              <a href="#myprofile" class="page-scroll btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Click to learn more about me</a>
+            </div>
+          </div>
+        </div> 
+      </div>           
+    </header>
+    <!-- Header Section End --> 
+
+    <!-- About Me Section Start -->
+    <section id="myprofile" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">About Me</h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="lnr lnr-graduation-hat"></i>
+              </div>
+              <h4>Student</h4>
+              <p>I'm a 4th-year undergraduate at University of California, Berkeley majoring in Computer Science.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="lnr lnr-code"></i>
+              </div>
+              <h4>Software Developer</h4>
+              <p>I'm most interested in doing backend development and am always looking for opportunities to apply my skills.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.0s">
+              <div class="icon">
+                <i class="lnr lnr-cog"></i>
+              </div>
+              <h4>Hard Worker</h4>
+              <p>When I have a task to accomplish, I work endlessly even if it seems impossible, I believe giving full attention and effort is a neccesity.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.4s">
+              <div class="icon">
+                <i class="lnr lnr-users"></i>
+              </div>
+              <h4>People Person</h4>
+              <p>I believe it is important to build great relationships with others. I am always willing to get to know someone better.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.8s">
+              <div class="icon">
+                <i class="lnr lnr-music-note"></i>
+              </div>
+              <h4>Musician</h4>
+              <p>I enjoy playing the snare drum and piano. My favorite piano piece is Ballade No.1, Op.23 by Frédéric Chopin.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="2.2s">
+              <div class="icon">
+                <i class="lnr lnr-magnifier"></i>
+              </div>
+              <h4>ISTJ</h4>
+              <p>I am an ISTJ according to the Myers-Briggs test, meaning that I like to be organized and am very detail-oriented.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section End -->
+
+    <!-- Experience Section Start -->
+    <section id="experience" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Experience</h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+        </div>
+        <div class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div class="col-sm-4">
+            <img class="img-fulid" src="img/att.png" alt="">
+          </div>
+          <div class="col-sm-8 box-item">
+            <div class="text">
+              <h3>AT&T</h3>
+              <h4>Software Developer Intern</h4>
+              <p>Summer 2018</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row wow fadeInDown" data-wow-delay="0.8s">
+          <div class="col-sm-4" id="breakout">
+            <img class="img-fulid" src="img/breakout.png" alt="">
+          </div>
+          <div id = "test">
+          </div>
+          <div class="col-sm-8 box-item">
+            <div class="text">
+              <h3>Breakout Mentors</h3>
+              <h4>Coding Mentor</h4>
+              <p>Spring 2018 - Present</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row wow fadeInDown" data-wow-delay="1.0s">
+          <div class="col-sm-4">
+            <img class="img-fulid" src="img/berkeley.jpg" alt="">
+          </div>
+          <div class="col-sm-8 box-item">
+            <div class="text">
+              <h3>UC Berkeley</h3>
+              <h4>B.A. Computer Science</h4>
+              <p>Fall 2015 - Spring 2019</p>
+              <h4>Academic Intern</h4>
+              <p>Summer 2016 - Spring 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Projects</h2>
+          <hr class="lines">
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a class="filter active btn btn-common" data-filter="all">
+                All 
+              </a>
+              <a class="filter btn btn-common" data-filter=".school">
+                School Projects
+              </a>
+              <a class="filter btn btn-common" data-filter=".prof">
+                Professional 
+              </a>
+              <a class="filter btn btn-common" data-filter=".available">
+                Available 
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school available">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Chat</h5>
+                  <hr>
+                  <p>An application that connects multiple clients over a network channel to communicate built on Python.</p>
+                  <!--
+                  <a class="overlay lightbox" href="some_link" target="_blank">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                  -->
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#contact">
+                    Available on Bitbucket. Feel free to contact me to view the repository.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school available">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Operating System</h5>
+                  <hr>
+                  <p>A fully-operational operating system designed and implemented over the Pintos operating system.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#contact">
+                    Available on Bitbucket. Feel free to contact me to view the repository.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Pacman-AI</h5>
+                  <hr>
+                  <p>An intelligent agent built with Bayesian Learning, Inference, Update, along with Q-Learning tactics.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
+                    Not available.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school available">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Enigma</h5>
+                  <hr>
+                  <p>A simulator for an Engima machine that encodes/decodes messages. Uses the actual algorithm from WW2.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#contact">
+                    Available on Bitbucket. Feel free to contact me to view the repository.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school available">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Secure Storage Client</h5>
+                  <hr>
+                  <p>A file storage client that can securely upload, download, share, revoke, and update files on a malicious server</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#contact">
+                    Available on Bitbucket. Feel free to contact me to view the repository.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>B+ Trees</h5>
+                  <hr>
+                  <p>A complete implementation of the B+ tree with insertion, deletion, bulk loading, searches, etc.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
+                    Not available.
+                  </a>
+                </div>               
+              </div>
+            </div>
+             <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix prof">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Chat Data Visualization</h5>
+                  <hr>
+                  <p>A dashboard that visualizes and analyzes large amounts of data from AT&T’s troubling shooting chat.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
+                    Not available.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix prof">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Dispatch Tracker</h5>
+                  <hr>
+                  <p>A dashboard that displays and keeps track of an AT&T technician's work schedule, location, and progress.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
+                    Not available.
+                  </a>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix school available">
+              <div class="project-item">
+                <div class="shot-item">
+                  <h5>Routing</h5>
+                  <hr>
+                  <p>An implementation of the distance-vector routing algorithm where multiple routers cooperate to transport packets to their destinations efficiently.</p>
+                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#contact">
+                    Available on Bitbucket. Feel free to contact me to view the repository.
+                  </a>
+                </div>               
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Projects Section Ends -->
+
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lnr lnr-user"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">1</span></h3>
+                <h4>Dedicated Individual</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lnr lnr-briefcase"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">25</span></h3>
+                <h4>Projects Completed</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lnr lnr-code"></i>
+              </div>
+              <div class="fact-count">
+                <h4>More than</h4>
+                <h3><span class="counter">10000</span></h3>
+                <h4>Lines of Code Written</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">
+              <div class="icon">
+                <i class="lnr lnr-pencil"></i>
+              </div>
+              <div class="fact-count">
+                <h3><span class="counter">27</span></h3>
+                <h4>Courses Completed</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-</div>
+    <!-- Counter Section End -->
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.linkedin.com/in/jeromylui/">
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!-- Start Courses Taken Section -->
+    <div id="coursestaken" class="section pricing-section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Relevant Courses</h2>
+          <hr class="lines">
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 170</h2>
+                <span>Algorithms</span>
+                <ul>
+                  <li>Graphs</li>
+                  <li>Greedy Algorithms</li>
+                  <li>Dynamic Programming</li>
+                  <li>NP-Completeness</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="https://inst.eecs.berkeley.edu/~cs170/fa17/" target="_blank" class="btn btn-common">Visit Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 188</h2>
+                <span>AI</span>
+                <ul>
+                  <li>Markov Processes</li>
+                  <li>Reinforcement Learning</li>
+                  <li>Naive Bayes</li>
+                  <li>Neural Networks</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="https://edge.edx.org/courses/course-v1:Berkeley+CS188+2017_FA17/" target="_blank" class="btn btn-common nav-link page-scroll">Visit Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 162</h2>
+                <span>OS</span>
+                <ul>
+                  <li>Kernels and Processes</li>
+                  <li>Concurrency</li>
+                  <li>Memory Management</li>
+                  <li>Persistent Storage</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="https://cs162.eecs.berkeley.edu/" target="_blank" class="btn btn-common">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 186</h2>
+                <span>Databases</span>
+                <ul>
+                  <li>B+ Trees</li>
+                  <li>Buffer Management</li>
+                  <li>DB Design</li>
+                  <li>Query Optimization</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="https://sites.google.com/site/cs186fall17/" target="_blank" class="btn btn-common">Visit Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 168</h2>
+                <span>Networking</span>
+                <ul>
+                  <li>Internet Protocols</li>
+                  <li>Routing</li>
+                  <li>Congestion Control</li>
+                  <li>Multicast and Middleboxes</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="http://cs168.io/" target="_blank" class="btn btn-common nav-link page-scroll">Visit Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="courses-taken">
+              <div class="course-details">
+                <h2>CS 161</h2>
+                <span>Security</span>
+                <ul>
+                  <li>Memory Safety</li>
+                  <li>Encryption and Authentication</li>
+                  <li>Network and Web Security</li>
+                  <li>CSRF and Session Management</li>
+                </ul>
+              </div>
+              <div class="plan-button">
+                <a href="http://www-inst.cs.berkeley.edu/~cs161/sp18/" target="_blank" class="btn btn-common">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Courses Taken Section -->
+
+    <!-- Start Resume Section -->
+    <section class="video-promo section" id="resume">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="video-promo-content text-center">
+              <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Resume</h2>
+              <a href="files/Resume.pdf" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-file-empty"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Resume Section -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="row">     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-us">
+                <h3>Contact Me</h3>
+                <div class="contact-address">
+                  <p>Berkeley, CA</p>
+                  <p class="phone">Phone: <span>1-510-552-3834</span></p>
+                  <p class="email">E-mail: <span>luijeromy@gmail.com</span></p>
+                </div>
+                <div class="social-icons">
+                  <ul>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/jeromylui" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>     
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <div class="contact-block">
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>                                 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button text-center">
+                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                  </div>            
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>           
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div class="row">
+          <!-- Footer Links -->
+          <div class="row">
+            <ul class="footer-links">
+              <li>
+                <a class="nav-link page-scroll" href="#hero-area">Home</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#myprofile">About Me</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#experience">Experience</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#projects">Projects</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#coursestaken">Relevant Courses</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#resume">Resume</a>
+              </li>
+              <li>
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
     </a>
-  </div>
-</footer>
- 
-<!-- Add Google Maps -->
-<script>
+    
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>     
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>    
+    <script src="js/smoothscroll.js"></script>    
+    <script src="js/jquery.slicknav.js"></script>     
+    <script src="js/wow.js"></script>   
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-</body>
+  </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="slide.js"></script>

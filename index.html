@@ -596,15 +596,35 @@
             </div>     
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
+                  <form action="http://formspree.io/luijeromy@gmail.com" method="POST">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="email" name="_replyto" placeholder="Your Email" id="email" class="form-control"required data-error="Please enter your email">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea class="form-control" name="body" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="submit-button text-center">
+                          <input class="btn btn-common" type="submit" value="Send Message">
+                          <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                          <div class="clearfix">
+                        </div> 
+                      </div>
+                    </div>
+                  </form>
+                <!--
                 <form id="contactForm" action="https://formspree.io/luijeromy@gmail.com"
                   method="POST">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <!--
                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
-                      -->
                       </div>                                 
                     </div>
                     <div class="col-md-12">
@@ -623,25 +643,12 @@
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
-                      
-                      <!--
-                      <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit" value="Send">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    -->
                     </div>
                   </div>            
                 </form>
+                -->
               </div>
             </div>
-            <form action="http://formspree.io/luijeromy@gmail.com" method="POST">
-              <input type="email" name="_replyto" placeholder="Your Email">
-              <textarea name="body" placeholder="Text"></textarea>
-              <input type="submit" value="Send">
-            </form>
-            <p>second try</p>
           </div>
         </div>
       </div>           
